@@ -60,6 +60,8 @@ source=(
   5001-HID-apple-fix-key-translations-where-multiple-quirks.patch
   5002-HID-apple-enable-APPLE_ISO_TILDE_QUIRK-for-the-keybo.patch
 
+  6001-nvram-write-fix.patch
+
   # Hack for i915 overscan issues
   7001-drm-i915-fbdev-Discard-BIOS-framebuffers-exceeding-h.patch
 
@@ -280,6 +282,7 @@ sha256sums=('8ede745a69351ea0f27fe0c48780d4efa37ff086135e129358ce09694957e8f9'
             'b1f19084e9a9843dd8c457c55a8ea8319428428657d5363d35df64fb865a4eae'
             '7d27bd83133c2e883e854271c5f9f698c61196afc2922921675353303194ef2c'
             '4db195e0bda5712e60a78266c1458037063e5debd646b08376c4700a27d4b4ef'
+            '64ad589f5aff721249d49b4175cd0698c574f57b1296cc288815f2262b4493ec'
             '9ede98eceb69e9c93e25fdb2c567466963bdd2f81c0ecb9fb9e5107f6142ff26'
             'e27a4acdb9027a0652d558d619b5be3dc916d2472f3b4d01d10932fc6f35f8dc'
             'fc22ff1285552a85148ec5c21a9e5d93f2420a806ebdc53894636ec5f17505a8')
