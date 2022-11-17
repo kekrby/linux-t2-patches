@@ -3664,7 +3664,7 @@ index 00000000000000..016145cfa39d3b
 +	ret = hid_hw_raw_request(backlight->hdev, 0x03, (__u8 *) rep, sizeof(*rep),
 +				 HID_FEATURE_REPORT, HID_REQ_SET_REPORT);
 +	kfree(rep);
-+	return ret;
++	return (ret > 0) ? 0 : ret;
 +}
 +
 +static int apple_magic_backlight_brightness_set(struct apple_magic_backlight *backlight,
@@ -3686,7 +3686,7 @@ index 00000000000000..016145cfa39d3b
 +	ret = hid_hw_raw_request(backlight->hdev, 0x01, (__u8 *) rep, sizeof(*rep),
 +				 HID_FEATURE_REPORT, HID_REQ_SET_REPORT);
 +
-+	return ret;
++	return (ret > 0) ? 0 : ret;
 +}
 +
 +static int apple_magic_backlight_set(struct apple_magic_backlight *backlight,
